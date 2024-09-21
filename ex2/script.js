@@ -18,7 +18,7 @@ function principal2() {
 
     while (continuar && nomes.length < 20) {
         cadastrarAlunos(nomes, matriculas, anosDeNascimento, notas);
-        if (nomes.length >= 2) {
+        if (nomes.length >= 5) {
             continuar = confirm("Deseja continuar o cadastro? (OK para sim, Cancelar para não)");
         }
     }

@@ -42,7 +42,7 @@ function principal1() {
 
     while (continuar && nomes.length < 50) {
         cadastrarFuncionario(nomes, PASEP, val_horarios, quant_horas_trabalhadas);
-        if (nomes.length >= 2) {
+        if (nomes.length >= 5) {
             continuar = confirm("Deseja continuar o cadastro? (OK para sim, Cancelar para não)");
         }
     }
