@@ -141,7 +141,7 @@ function calcularImpostos(val_horas, hora_trabalhada) {
 }
 
 function exibirCadastrodePrestadoresdeServico(nomes, PASEP, val_horarios, quant_horas_trabalhadas) {
-    let mensagem = '';
+    let mensagem = '<h1>Cadastro de Prestador de Serviço</h1>';
     for (let i = 0; i < nomes.length; i++) {
         let { valorBruto, inss, imposto_de_renda, imposto_sobre_serviço, valorLiquido } = calcularImpostos(val_horarios[i], quant_horas_trabalhadas[i]);
         mensagem += `<h2>${i + 1}° Prestador de serviço:</h2>

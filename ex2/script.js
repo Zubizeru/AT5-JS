@@ -119,7 +119,7 @@ function exibirCadastrodeAlunos(nomes, matriculas, anosDeNascimento, notas) {
             } else {
                 status = statusNotas[1];
             }
-           mensagem += `<p>${materias[j]}: ${notas[i][j]} - ${status}</p>`;
+           mensagem += `<p>Nota em ${materias[j]}: ${notas[i][j]} - ${status}</p>`;
         }
         mensagem += `<br>`;
     }
