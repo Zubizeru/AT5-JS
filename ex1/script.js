@@ -42,7 +42,7 @@ function principal1() {
 
     while (continuar && nomes.length < 50) {
         cadastrarFuncionario(nomes, PASEP, val_horarios, quant_horas_trabalhadas);
-        if (nomes.length >= 5) {
+        if (nomes.length >= 1) {
             continuar = confirm("Deseja continuar o cadastro? (OK para sim, Cancelar para não)");
         }
     }
@@ -128,6 +128,8 @@ function calcularImpostos(val_horas, hora_trabalhada) {
         imposto_de_renda = valorBruto * 0.075;
     } else if (valorBruto <= 4000.99) {
         imposto_de_renda = valorBruto * 0.15;
+    } else if (valorBruto <= 4000.99) {
+        imposto_de_renda = valorBruto * 0.225;
     } else {
         imposto_de_renda = valorBruto * 0.275;
     }
